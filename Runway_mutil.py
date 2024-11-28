@@ -273,20 +273,3 @@ if __name__ == '__main__':
         plt.legend()
         # 展示图形
         plt.show()
-
-
-
-# 设置优化器
-# optimizer = Optimizer(dimensions=space, base_estimator="GP", acq_func="EI", n_initial_points=10, random_state=42)
-
-# # 运行优化
-# for i in range(100):  # 最大迭代次数为100
-#     # 获取下一个候选解
-#     x_next = optimizer.ask()
-#
-#     # 评估候选解
-#     y_next = objective_function(x_next)
-#
-#     # 提供评估结果
-#     optimizer.tell(x_next, y_next)
-#     print(f"Iteration {i + 1}, Best result: {optimizer.Xi[0]}, Best objective: {optimizer.yi[0]}")
